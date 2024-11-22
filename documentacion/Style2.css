@@ -1,0 +1,135 @@
+/* Estilo general para la subpágina */
+body {
+  font-family: "Georgia", serif; /* Fuente romántica y elegante */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to bottom,
+    #fffaf0,
+    #ffb6c1
+  ); /* Fondo degradado suave */
+  color: #4d4d4d; /* Texto gris oscuro */
+  text-align: center;
+}
+
+header {
+  background-color: #ff6f61;
+  padding: 20px;
+  color: #fff;
+  font-size: 2em;
+  font-style: italic; /* Estilo cursivo para más romanticismo */
+  border-bottom: 5px solid #ffb6c1; /* Línea decorativa */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+main {
+  padding: 20px;
+}
+
+img.foto-principal {
+  max-width: 250px; /* Imagen más pequeña */
+  width: 90%; /* Ajuste proporcional para pantallas pequeñas */
+  height: auto; /* Mantiene proporción */
+  border-radius: 15px; /* Bordes suaves */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+  margin: 20px auto;
+  display: block; /* Centra la imagen */
+}
+
+/* Estilo para el poema */
+.poema {
+  font-size: 1.4em; /* Letra grande y clara */
+  color: #8b0000; /* Texto rojo oscuro */
+  line-height: 1.8; /* Espaciado amplio para una lectura cómoda */
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px; /* Limita el ancho del texto */
+  text-align: left; /* Alineación para una lectura más natural */
+  font-style: italic; /* Toque cursivo */
+  background: #fff7f7; /* Fondo claro y suave */
+  border-left: 5px solid #ff6f61; /* Línea decorativa a la izquierda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Botón de navegación */
+.boton-link {
+  display: inline-block;
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-link:hover {
+  background-color: #ff8566;
+  transform: scale(1.05); /* Efecto de crecimiento al pasar el cursor */
+}
+
+/* Footer */
+footer {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 5px solid #ffb6c1; /* Línea decorativa */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2); /* Sombra superior */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+
+  img.foto-principal {
+    max-width: 200px; /* Imagen más pequeña */
+  }
+
+  .poema {
+    font-size: 1.2em; /* Texto más pequeño */
+    margin: 10px 20px;
+  }
+
+  .boton-link {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  img.foto-principal {
+    max-width: 150px; /* Imagen aún más pequeña */
+  }
+
+  .poema {
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px 15px;
+  }
+
+  .boton-link {
+    font-size: 0.8em;
+    padding: 6px 12px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}

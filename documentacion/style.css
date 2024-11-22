@@ -1,0 +1,139 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to bottom,
+    #ffecd2,
+    #fcb69f
+  ); 
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #ff6f61;
+  padding: 20px;
+  color: #fff;
+  font-size: 2em;
+  font-style: italic; 
+  border-bottom: 5px solid #ffb6c1; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+main {
+  padding: 20px;
+}
+
+img.foto-principal {
+  max-width: 300px; 
+  width: 90%; 
+  height: auto; 
+  border-radius: 15px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  margin: 20px auto;
+  display: block;
+}
+
+.mensaje,
+#hiddenMessage {
+  font-size: 1.2em;
+  color: #5a5a5a;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+#hiddenMessage {
+  display: none; 
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+button,
+.boton-link {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover,
+.boton-link:hover {
+  background-color: #ff8566;
+  transform: scale(1.05); 
+}
+
+
+footer {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 0;
+  position: relative; 
+  width: 100%;
+  font-size: 0.9em;
+  text-align: center;
+  border-top: 5px solid #ffb6c1;
+  margin-top: 20px; 
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+
+  img.foto-principal {
+    max-width: 250px; 
+  }
+
+  .mensaje,
+  #hiddenMessage {
+    font-size: 1em; 
+    padding: 0 15px;
+  }
+
+  button,
+  .boton-link {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  img.foto-principal {
+    max-width: 200px; 
+  }
+
+  .mensaje,
+  #hiddenMessage {
+    font-size: 0.9em; 
+    padding: 0 10px;
+  }
+
+  button,
+  .boton-link {
+    font-size: 0.8em;
+    padding: 6px 12px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
